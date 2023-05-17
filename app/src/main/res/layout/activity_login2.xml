@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity2">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="133dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/logotruong" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ĐĂNG NHẬP HỆ THỐNG"
+        android:textSize="22dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TÊN ĐĂNG NHẬP"
+        android:layout_marginTop="20dp"
+        />
+    <EditText
+        android:id="@+id/ednhapten"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=""
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MẬT KHẨU"
+        />
+    <EditText
+        android:id="@+id/ednhapmatkhau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        app:passwordToggleEnabled="true"
+
+
+        />
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nhớ mật khẩu"
+        android:id="@+id/chkpass"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/btndangnhap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Đăng Nhập"
+            android:onClick="dangnhap"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sửa Lại"
+            android:id="@+id/btnsualai"
+            android:layout_marginLeft="20dp"
+            android:onClick="reset"
+            />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".StudentActivity2">
+
+   <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="175dp"
+       android:src="@drawable/anh1" />
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:hint="Tên Lớp"
+      android:textSize="16sp"
+     />
+
+     <Spinner
+         android:id="@+id/spnclass"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_weight="3" />
+  </LinearLayout>
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Mã Sinh Viên"
+       android:id="@+id/edmasinhvien"
+      />
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Tên Sinh Viên"
+       android:id="@+id/edTensinhvien"
+       />
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Điện Thoại"
+       android:id="@+id/eddienthoai"
+       />
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       >
+      <Button
+          android:id="@+id/btnluusinhvien"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="Lưu"
+          android:onClick="save"
+          />
+
+
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="Sửa Lại"
+          android:id="@+id/btnsualaisinhvien"
+          android:layout_marginLeft="20dp"
+
+          />
+   </LinearLayout>
+
+
+
+</LinearLayout>
